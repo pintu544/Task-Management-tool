@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="TaskMangement@localhost">
+  <database-model serializer="dbm" dbms="MONGO" family-id="MONGO" format-version="4.45">
+    <root id="1">
+      <ServerVersion>6.0.1</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="FaynmanBoard"/>
+    <schema id="3" parent="1" name="TaskMangement">
+      <Current>1</Current>
+    </schema>
+    <schema id="4" parent="1" name="admin"/>
+    <schema id="5" parent="1" name="buyofuelDB"/>
+    <schema id="6" parent="1" name="config"/>
+    <schema id="7" parent="1" name="demomern"/>
+    <schema id="8" parent="1" name="local"/>
+    <schema id="9" parent="1" name="technative"/>
+    <table id="10" parent="3" name="tasks"/>
+    <table id="11" parent="3" name="users"/>
+    <column id="12" parent="10" name="_id">
+      <DasType>ObjectId|12s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="13" parent="10" name="__v">
+      <DasType>Int32|4s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="14" parent="10" name="priority">
+      <DasType>Int32|4s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="15" parent="10" name="assignTo">
+      <DasType>String|12s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="16" parent="10" name="taskName">
+      <DasType>String|12s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="17" parent="10" name="complete">
+      <DasType>String|12s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="18" parent="10" name="description">
+      <DasType>String|12s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="19" parent="10" name="dueDate">
+      <DasType>String|12s</DasType>
+      <Position>5</Position>
+    </column>
+    <column id="20" parent="11" name="_id">
+      <DasType>ObjectId|12s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="21" parent="11" name="email">
+      <DasType>String|12s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="22" parent="11" name="__v">
+      <DasType>Int32|4s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="23" parent="11" name="password">
+      <DasType>String|12s</DasType>
+      <Position>2</Position>
+    </column>
+  </database-model>
+</dataSource>
